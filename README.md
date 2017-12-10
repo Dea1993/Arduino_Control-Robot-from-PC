@@ -9,8 +9,11 @@ Dependencies<br>
 
 Debian and Ubuntu<br>
 sudo apt-get install python2.7 python-serial python-glade2
-
-
-![Screenshot](Screenshots/err.png)
-
+<br><br>
+INSTALL<br>
+Install "robot_manuale.ino" into Arduino, then (with USB cable plugged) launch the client software "controllo_robot_GTK-1.2b.py" and select the command that you want
+<br><br>
+Screenshots of Client Software (python)
+<br><br>
 ![Screenshot](Screenshots/control.png)
+![Screenshot](Screenshots/err.png)
