@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<glade-interface>
+  <!-- interface-requires gtk+ 2.16 -->
+  <!-- interface-naming-policy project-wide -->
+  <widget class="GtkWindow" id="winMain">
+    <property name="width_request">450</property>
+    <property name="height_request">400</property>
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="is_focus">True</property>
+    <property name="events">GDK_EXPOSURE_MASK | GDK_STRUCTURE_MASK</property>
+    <signal name="destroy" handler="on_winMain_destroy"/>
+    <child>
+      <widget class="GtkTable" id="table">
+        <property name="visible">True</property>
+        <property name="n_rows">6</property>
+        <property name="n_columns">5</property>
+        <child>
+          <widget class="GtkButton" id="cmdVel1">
+            <property name="label" translatable="yes">      1     </property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="xalign">0.46000000834465027</property>
+            <signal name="clicked" handler="on_cmdVel1_clicked" object="1"/>
+          </widget>
+          <packing>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdVel2">
+            <property name="label" translatable="yes">2</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdVel2_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdVel3">
+            <property name="label" translatable="yes">3</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdVel3_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="right_attach">3</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdVel4">
+            <property name="label" translatable="yes">4</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdVel4_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="right_attach">4</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdStop">
+            <property name="label" translatable="yes">   Stop   </property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdStop_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdAvanti">
+            <property name="label" translatable="yes">Avanti</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdAvanti_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="right_attach">3</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdSinistra">
+            <property name="label" translatable="yes">Sinistra</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdSinistra_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdDestra">
+            <property name="label" translatable="yes">Destra</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdDestra_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdRsx">
+            <property name="label" translatable="yes">Ruota SX</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdRsx_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdRdx">
+            <property name="label" translatable="yes">Ruota DX</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdRdx_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdCancel">
+            <property name="label" translatable="yes">Esci</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="destroy" handler="on_cmdCancel_destroy"/>
+            <signal name="clicked" handler="on_cmdCancel_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">5</property>
+            <property name="bottom_attach">6</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cmdIndietro">
+            <property name="label" translatable="yes">Indietro</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cmdIndietro_clicked"/>
+          </widget>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="right_attach">3</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+            <property name="x_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkVSeparator" id="vseparator1">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+          </widget>
+          <packing>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">6</property>
+            <property name="x_options">GTK_EXPAND</property>
+            <property name="y_options">GTK_EXPAND</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkVSeparator" id="vseparator2">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+          </widget>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="right_attach">5</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">6</property>
+            <property name="x_options">GTK_EXPAND</property>
+            <property name="y_options">GTK_EXPAND</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHSeparator" id="hseparator1">
+            <property name="visible">True</property>
+          </widget>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">4</property>
+            <property name="bottom_attach">5</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHSeparator" id="hseparator2">
+            <property name="visible">True</property>
+          </widget>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">4</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
